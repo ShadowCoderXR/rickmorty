@@ -6,6 +6,7 @@ import com.library.rickmorty.model.Location;
 import com.library.rickmorty.service.CharacterService;
 import com.library.rickmorty.service.EpisodeService;
 import com.library.rickmorty.service.LocationService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,10 +17,12 @@ public class RickMortyClient {
     private final EpisodeService episodeService;
     private final LocationService locationService;
 
-    public RickMortyClient() {
-        this.characterService = new CharacterService();
-        this.episodeService = new EpisodeService();
-        this.locationService = new LocationService();
+
+    @Autowired
+    public RickMortyClient(CharacterService characterService, EpisodeService episodeService, LocationService locationService) {
+        this.characterService = characterService;
+        this.episodeService = episodeService;
+        this.locationService = locationService;
     }
 
     public Character getCharacterById(int id) {
