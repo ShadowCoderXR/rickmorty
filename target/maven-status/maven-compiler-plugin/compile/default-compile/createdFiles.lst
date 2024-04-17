@@ -1,0 +1,13 @@
+com\library\rickmorty\RickMortyClient.class
+com\library\rickmorty\RickMortyClientApplication.class
+com\library\rickmorty\model\Character.class
+com\library\rickmorty\model\Episode.class
+com\library\rickmorty\service\EpisodeService.class
+com\library\rickmorty\model\Location.class
+com\library\rickmorty\utils\HttpUtils.class
+com\library\rickmorty\service\CharacterService.class
+com\library\rickmorty\model\Location$LocationBuilder.class
+com\library\rickmorty\model\Episode$EpisodeBuilder.class
+com\library\rickmorty\utils\JsonUtils.class
+com\library\rickmorty\model\Character$CharacterBuilder.class
+com\library\rickmorty\service\LocationService.class
